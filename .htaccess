@@ -1,0 +1,5 @@
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^inventory\.mindsinfotech\.com$
+RewriteCond %{REQUEST_URI} !^/inventory/
+RewriteRule (.*) /inventory/$1
